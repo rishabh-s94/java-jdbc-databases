@@ -70,7 +70,7 @@ int count = detailsPS.executeUpdate();
                     }
                 }
             } catch(SQLException ex) {
-
+con.rollback();
                 ExceptionHandler.handleException(ex);
             }
         } catch (SQLException ex) {
