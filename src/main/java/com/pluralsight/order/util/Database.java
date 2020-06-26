@@ -13,7 +13,9 @@ import java.sql.SQLException;
 public class Database {
     private static Database instance = null;
     private static boolean isInitialized = false;
-
+    private String url;
+    private String user = "sa";
+    private String password;
     /**
      * Private constructor
      */
